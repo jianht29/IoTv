@@ -268,13 +268,29 @@ namespace IoTv
         private void FormMain_Load(object sender, EventArgs e)
         {
             // 初始化折线图
-            UILineOption optionLineChart = new UILineOption();
-            optionLineChart.ToolTip.Visible = true;
-            optionLineChart.Title = new UITitle
+            UILineOption optionLineChart = new UILineOption
             {
-                Text = "实时测量折线图",
-                SubText = "（环境温湿度测量数据）"
+                // 设置标题
+                Title = new UITitle
+                {
+                    Text = "实时测量折线图",
+                    SubText = "（环境温湿度测量数据）"
+                },
+
+                // 设置Legend（图例）
+                Legend = new UILegend
+                {
+                    Orient = UIOrient.Horizontal,
+                    Top = UITopAlignment.Top,
+                    Left = UILeftAlignment.Left,
+                    Colors = { UIColor.Blue, UIColor.Orange }
+                }
             };
+
+            optionLineChart.Legend.AddData("温度");
+            optionLineChart.Legend.AddData("湿度");
+            optionLineChart.ToolTip.Visible = true;
+
             var series1 = optionLineChart.AddSeries(new UILineSeries("Line1"));
             var series2 = optionLineChart.AddSeries(new UILineSeries("Line2"));
             series1.CustomColor = true;
