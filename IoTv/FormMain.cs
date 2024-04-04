@@ -333,6 +333,7 @@ namespace IoTv
             this.uiLedLabel1.ForeColor = Color.DarkOrange;
             this.uiAnalogMeter1.Style = UiStyle;
             this.uiThermometer1.Style = UiStyle;
+            this.uiLineChart1.Refresh();
 
             // 建议使用SIoT1.3作为MQTT服务器进行测试
             // 使用手册：https://siot.readthedocs.io/zh-cn/latest/
@@ -399,6 +400,7 @@ namespace IoTv
             this.uiLedLabel1.ForeColor = Color.DarkOrange;
             this.uiAnalogMeter1.Style = UiStyle;
             this.uiThermometer1.Style = UiStyle;
+            this.uiLineChart1.Refresh();
         }
 
         private void ToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -418,6 +420,7 @@ namespace IoTv
             this.uiLedLabel1.ForeColor = Color.DarkOrange;
             this.uiAnalogMeter1.Style = UiStyle;
             this.uiThermometer1.Style = UiStyle;
+            this.uiLineChart1.Refresh();
         }
 
         private void ToolStripMenuItem3_Click(object sender, EventArgs e)
