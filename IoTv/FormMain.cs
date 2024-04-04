@@ -34,7 +34,6 @@ using Sunny.UI;
 using System;
 using System.ComponentModel;
 using System.Drawing;
-using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -341,19 +340,25 @@ namespace IoTv
             // GitHub：https://github.com/vvlink/SIoT/
 
             // 可以在任意位置重新设置需要连接的MQTT服务参数
-            Mqtt_Server = "127.0.0.1";
-            Mqtt_Port = 1883;
-            Mqtt_UserName = "siot";
-            Mqtt_PassWord = "dfrobot";
-            Mqtt_ClientId = "MyClient";
+            //Mqtt_Server = "127.0.0.1";
+            //Mqtt_Port = 1883;
+            //Mqtt_UserName = "siot";
+            //Mqtt_PassWord = "dfrobot";
+            //Mqtt_ClientId = "MyClient";
 
             // MQTTnet相关资源链接
             // GitHub：https://github.com/dotnet/MQTTnet
             // NuGet：https://www.nuget.org/packages/MQTTnet/
 
+            // 增加连接MQTT服务器的对话框，不再自动连接MQTT服务器
+            // 请在标题栏现的扩展按钮链接的下拉菜单中进行相关操作         
+
             // 使用MQTTnet连接MQTT服务器
-            MqttClientStop();
-            MqttClientStart();
+            //MqttClientStop();
+            //MqttClientStart();
+
+            // 启动产生模拟数据的计时器Timer1
+            //timer1.Enabled = true; 
         }
 
         private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
@@ -413,6 +418,12 @@ namespace IoTv
             this.uiLedLabel1.ForeColor = Color.DarkOrange;
             this.uiAnalogMeter1.Style = UiStyle;
             this.uiThermometer1.Style = UiStyle;
+        }
+
+        private void ToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            FormMqtt formMqtt = new FormMqtt(this);
+            formMqtt.ShowDialog();
         }
     }
 }
