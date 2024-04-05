@@ -178,7 +178,7 @@ namespace IoTv
                         this.uiThermometer1.Value = temperature;
 
                         // 添加折线图数据
-                        this.uiLineChart1.Option.AddData("Line1", dateTime1, temperature);
+                        this.uiLineChart1.Option.AddData("Temperature", dateTime1, temperature);
                         // 设置X轴的显示范围为60秒以内
                         this.uiLineChart1.Option.XAxis.SetRange(dateTime1.AddSeconds(-60).ZeroMillisecond(), dateTime1.ZeroMillisecond());
                         // 更新折线图显示
@@ -201,7 +201,7 @@ namespace IoTv
                         this.uiAnalogMeter1.Value = humidity;
 
                         // 添加折线图数据
-                        this.uiLineChart1.Option.AddData("Line2", dateTime2, humidity);
+                        this.uiLineChart1.Option.AddData("Humidity", dateTime2, humidity);
                         // 设置X轴的显示范围为60秒以内
                         this.uiLineChart1.Option.XAxis.SetRange(dateTime2.AddSeconds(-60).ZeroMillisecond(), dateTime2.ZeroMillisecond());
                         // 更新折线图显示
@@ -290,8 +290,8 @@ namespace IoTv
             optionLineChart.Legend.AddData("湿度");
             optionLineChart.ToolTip.Visible = true;
 
-            var series1 = optionLineChart.AddSeries(new UILineSeries("Line1"));
-            var series2 = optionLineChart.AddSeries(new UILineSeries("Line2"));
+            var series1 = optionLineChart.AddSeries(new UILineSeries("Temperature"));
+            var series2 = optionLineChart.AddSeries(new UILineSeries("Humidity"));
             series1.CustomColor = true;
             series2.CustomColor = true;
             series1.Color = UIColor.Blue;
