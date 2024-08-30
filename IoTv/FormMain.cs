@@ -320,19 +320,21 @@ namespace IoTv
 
             // 设置默认的主题风格
             UiStyle = UIStyle.Blue;
-            this.Style = UiStyle;
+            // 使用StyleManager统一设置控件主题
+            //uiStyleManager1.Style = UiStyle;
+            //this.Style = UiStyle;
             this.uiLineChart1.ChartStyleType = UIChartStyleType.Plain;
-            this.uiLineChart1.Style = UiStyle;
-            this.uiDataGridView1.Style = UiStyle;
-            this.uiContextMenuStrip1.Style = UiStyle;
-            this.uiLine1.Style = UiStyle;
-            this.uiLine2.Style = UiStyle;
-            this.uiLine3.Style = UiStyle;
-            this.uiLine4.Style = UiStyle;
-            this.uiLedLabel1.Style = UiStyle;
+            //this.uiLineChart1.Style = UiStyle;
+            //this.uiDataGridView1.Style = UiStyle;
+            //this.uiContextMenuStrip1.Style = UiStyle;
+            //this.uiLine1.Style = UiStyle;
+            //this.uiLine2.Style = UiStyle;
+            //this.uiLine3.Style = UiStyle;
+            //this.uiLine4.Style = UiStyle;
+            //this.uiLedLabel1.Style = UiStyle;
             this.uiLedLabel1.ForeColor = Color.DarkOrange;
-            this.uiAnalogMeter1.Style = UiStyle;
-            this.uiThermometer1.Style = UiStyle;
+            //this.uiAnalogMeter1.Style = UiStyle;
+            //this.uiThermometer1.Style = UiStyle;
             this.uiLineChart1.Refresh();
 
             // 建议使用SIoT1.3作为MQTT服务器进行测试
@@ -387,19 +389,21 @@ namespace IoTv
         {
             // 设置浅色主题风格
             UiStyle = UIStyle.Blue;
-            this.Style = UiStyle;
+            // 使用StyleManager统一设置控件主题
+            uiStyleManager1.Style = UiStyle;
+            //this.Style = UiStyle;
             this.uiLineChart1.ChartStyleType = UIChartStyleType.Plain;
-            this.uiLineChart1.Style = UiStyle;
-            this.uiDataGridView1.Style = UiStyle;
-            this.uiContextMenuStrip1.Style = UiStyle;
-            this.uiLine1.Style = UiStyle;
-            this.uiLine2.Style = UiStyle;
-            this.uiLine3.Style = UiStyle;
-            this.uiLine4.Style = UiStyle;
-            this.uiLedLabel1.Style = UiStyle;
+            //this.uiLineChart1.Style = UiStyle;
+            //this.uiDataGridView1.Style = UiStyle;
+            //this.uiContextMenuStrip1.Style = UiStyle;
+            //this.uiLine1.Style = UiStyle;
+            //this.uiLine2.Style = UiStyle;
+            //this.uiLine3.Style = UiStyle;
+            //this.uiLine4.Style = UiStyle;
+            //this.uiLedLabel1.Style = UiStyle;
             this.uiLedLabel1.ForeColor = Color.DarkOrange;
-            this.uiAnalogMeter1.Style = UiStyle;
-            this.uiThermometer1.Style = UiStyle;
+            //this.uiAnalogMeter1.Style = UiStyle;
+            //this.uiThermometer1.Style = UiStyle;
             this.uiLineChart1.Refresh();
         }
 
@@ -407,19 +411,21 @@ namespace IoTv
         {
             // 设置深色主题风格
             UiStyle = UIStyle.DarkBlue;
-            this.Style = UiStyle;
+            // 使用StyleManager统一设置控件主题
+            uiStyleManager1.Style = UiStyle;
+            //this.Style = UiStyle;
             this.uiLineChart1.ChartStyleType = UIChartStyleType.LiveChart;
-            this.uiLineChart1.Style = UiStyle;
-            this.uiDataGridView1.Style = UiStyle;
-            this.uiContextMenuStrip1.Style = UiStyle;
-            this.uiLine1.Style = UiStyle;
-            this.uiLine2.Style = UiStyle;
-            this.uiLine3.Style = UiStyle;
-            this.uiLine4.Style = UiStyle;
-            this.uiLedLabel1.Style = UiStyle;
+            //this.uiLineChart1.Style = UiStyle;
+            //this.uiDataGridView1.Style = UiStyle;
+            //this.uiContextMenuStrip1.Style = UiStyle;
+            //this.uiLine1.Style = UiStyle;
+            //this.uiLine2.Style = UiStyle;
+            //this.uiLine3.Style = UiStyle;
+            //this.uiLine4.Style = UiStyle;
+            //this.uiLedLabel1.Style = UiStyle;
             this.uiLedLabel1.ForeColor = Color.DarkOrange;
-            this.uiAnalogMeter1.Style = UiStyle;
-            this.uiThermometer1.Style = UiStyle;
+            //this.uiAnalogMeter1.Style = UiStyle;
+            //this.uiThermometer1.Style = UiStyle;
             this.uiLineChart1.Refresh();
         }
 
